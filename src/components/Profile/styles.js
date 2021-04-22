@@ -2,7 +2,7 @@ import {makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles ((theme)=>({
     root:{
-        backgroundColor: 'white',
+        backgroundColor: '#dadef9',
         border: '6px',
         width: '100%',
         display: 'inline-block',        
@@ -19,14 +19,19 @@ export default makeStyles ((theme)=>({
             fontSize: '13.5px',
             color: '#787878',
             fontWeight: '400',            
-            marginLeft: '5px'
+            marginLeft: '1px'
         },
+        '& .MuiButtonBase-root':{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '20px',
+        }
 
     },
     timelineDetail:{
         color:'black',
         fontWeight: '700',
-        paddingRight: theme.spacing(1)
+        paddingRight: theme.spacing(0.5)
     },
     profileName:{
         lineHeight: '18px',

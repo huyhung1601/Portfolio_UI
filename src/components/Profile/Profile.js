@@ -7,6 +7,8 @@ import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import resumeData from '../../utils/resumeData'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineContent from '@material-ui/lab/TimelineContent'
+import Controls from '../Controls/Controls'
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 const CustomTimelineItem =({title,text,link})=>{
     const classes= useStyles()
@@ -53,7 +55,7 @@ const Profile = () => {
                     ))}
                 </CustomTimeline>
                 <br/>
-                <button>my button</button>
+                <Controls.Button  text={'Download Cv'} icon ={<GetAppIcon/> }/>
             </div>
         </div>
     )

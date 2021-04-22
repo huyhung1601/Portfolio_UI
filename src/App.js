@@ -1,4 +1,4 @@
-import { Container, Grid } from '@material-ui/core';
+import { Container, Grid, makeStyles } from '@material-ui/core';
 import React from 'react'
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile'
@@ -7,17 +7,22 @@ import Resume from './pages/Portfolio/Portfolio'
 import Footer from './components/Footer/Footer'
 
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
-
+const useStyles = makeStyles ((theme)=>({
+  root:{
+    paddingTop: theme.spacing(5)
+  }
+}))
 function App() {
+  const classes = useStyles()
   return (
-    <Container>
-      <Grid container >        
-        <Grid item xs={12} sm={12} md={4} lg={3} style={{backgroundColor: 'blue'}}>
+    <Container className={classes.root}>
+      <Grid container spacing={5}>        
+        <Grid item xs={12} sm={12} md={4} lg={3} >
           <Profile/>
         </Grid>
-        <Grid item xs style={{backgroundColor: 'red'}}>
-          <Header/>
+        <Grid item xs >          
           <Router>
+          <Header/>
             <Switch>
               <Route path='/portfolio'>
                 <Portfolio/>
