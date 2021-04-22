@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 export default {
     name: 'Huy Hung Nguyen',
-    title: 'React Front End Developer',
+    title: 'Front End Developer',
 
     birthday: '16th Jan 1989',
     email: 'huyhung1601@gmail.com',
@@ -12,17 +12,17 @@ export default {
     phone: '0420 600 611',
 
     socials:{
-        facebook:{
+        Facebook:{
             link: 'https://www.facebook.com/gk.longca',
             text: 'my facebook',
             icon: <FacebookIcon/>,
         },
-        linkedIn:{
+        LinkedIn:{
             link: 'https://www.facebook.com/gk.longca',
             text: 'my linkedin',
             icon: <LinkedInIcon/>,
         },
-        github:{
+        Github:{
             link: 'https://www.facebook.com/gk.longca',
             text: 'my github',
             icon: <GitHubIcon/>,

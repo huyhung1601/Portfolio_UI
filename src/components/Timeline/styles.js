@@ -2,7 +2,7 @@ import {makeStyles} from '@material-ui/core/styles'
 
 export default makeStyles ((theme)=>({
     root:{
-        paddingLeft: theme.spacing(4),
+        
         '& .MuiTimelineItem-root' :{
             minHeight: '0px'
         },
@@ -11,6 +11,9 @@ export default makeStyles ((theme)=>({
         },
         '& .MuiTimelineConnector-root' :{
             backgroundColor: '#eee'
+        },
+        '& .MuiTimelineContent-root ':{
+            paddingTop: '0px'
         }
     },
     timelineHeader:{
@@ -38,6 +41,6 @@ export default makeStyles ((theme)=>({
     timelineContent:{
         paddingTop: '0px',
         marginBottom: '20px'
-    }
-    
+    },
+
 }))

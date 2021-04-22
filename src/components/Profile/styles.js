@@ -14,7 +14,19 @@ export default makeStyles ((theme)=>({
             '& .MuiTypography-subtitle1':{
                 fontSize:'13px',
                 color: '#777',
-            }
+            },
+        '& .MuiTypography-body1 ':{
+            fontSize: '13.5px',
+            color: '#787878',
+            fontWeight: '400',            
+            marginLeft: '5px'
+        },
+
+    },
+    timelineDetail:{
+        color:'black',
+        fontWeight: '700',
+        paddingRight: theme.spacing(1)
     },
     profileName:{
         lineHeight: '18px',
@@ -27,6 +39,16 @@ export default makeStyles ((theme)=>({
     },
     avatar:{
         width: '100%',
-    }
+    },
+    /**Information */
+    profileInformation:{
+        top: 0,
+        left: 0,
+        margin: '-44px 10px 30px',
+    },
+    timelineContent:{
+        marginTop: '2px',
+        marginBottom: '12px',
+    } 
     
 }))
