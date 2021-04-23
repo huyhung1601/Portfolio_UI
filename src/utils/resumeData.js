@@ -58,6 +58,28 @@ export default {
             date: 'FEB 2014 - SEP 2014',
             description:``
         },
+    ],
+    skills:[
+        {
+            title: 'FRONT_END',
+            description: [
+                'ReactJS',
+                'JavaScript',
+                'TypeScript',
+                'Bootstrap',
+                'Material UI'
+            ]
+        },
+        {
+            title: 'SOURCE CONTROL',
+            description: ['Git', 'GitHub', ]
+        },
+        {
+            title: 'PROJECT MANAGEMENT',
+            description:[
+
+            ]
+        }
     ]
 }
 /** '\n' : new line */
