@@ -6,7 +6,13 @@ const Portfolio = () => {
     const [tabValue, setTabValue] = useState('All')
     const [projectDialog, setProjectDialog] =useState(false)
     const ProjectDialog = () =>(
-        <Dialog className='projectDialog' open={projectDialog} onClose={()=> setProjectDialog(false)}>
+        <Dialog 
+            maxWidth='md'
+            fullWidth
+            className='projectDialog' 
+            open={projectDialog} 
+            onClose={()=> setProjectDialog(false)}
+        >
             <DialogTitle onClose={()=> setProjectDialog(false)}> {projectDialog.title}</DialogTitle>
             <img src={projectDialog.image} alt='' className='projectDialog_image'/>
             <DialogContent>
