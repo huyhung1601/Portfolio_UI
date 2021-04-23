@@ -1,12 +1,14 @@
-import { Grid, Typography, Paper} from '@material-ui/core'
+import { Grid, Typography, Paper, TextField} from '@material-ui/core'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import React from 'react'
 import resumeData from '../../utils/resumeData'
 import CustomTimeline, {CustomTimelineSeparator}from '../../components/Timeline/Timeline'
 import './Resume.css'
-import { Work } from '@material-ui/icons'
+import { ControlPointSharp, Work } from '@material-ui/icons'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineDot from '@material-ui/lab/TimelineDot'
+import Controls from '../../components/Controls/Controls'
+
 const Resume = () => {
     return (
     <>
@@ -73,20 +75,20 @@ const Resume = () => {
             </Grid>
         </Grid>
         {/**Services */}
-        <Grid container>
+        <Grid container className='section p_45'>
             <Grid item className='section_title mb_30'>
                 <span></span>
-                <h6 className='section_title_text'>My Services</h6>
+                <h6 className='section_title_text'>My Skills</h6>
             </Grid>
             <Grid item xs={12} container>
 
             </Grid>
         </Grid> 
         {/**Skills */}
-        <Grid container spacing={3} justify='space-between' className graybg pb_45>
+        <Grid container spacing={3} justify='space-between' className= 'graybg pb_45'>
             {/*  <Grid item className='section_title mb_30'>
                 <span></span>
-                <h6 className='section_title_text'>My Services</h6>
+                <h6 className='section_title_text'>My Skills</h6>
             </Grid>                 */}
             {resumeData.skills.map((skill)=>(
                 <Grid item xs={12} sm={6} md={3}>
@@ -105,8 +107,74 @@ const Resume = () => {
             ))}
         </Grid> 
         {/**Contacts */}
-        <Grid container>
-        
+        <Grid container className='section pt_45 p_45'>   
+        {/**Contact form */}        
+        <Grid item xs={12} lg={7} container>
+            <Grid item className='section_title mb_30'>
+                <span></span>
+                <h6 className='section_title_text'>Contact Form</h6>
+            </Grid>
+            <Grid item xs={12} container  spacing={3} >                
+                <Grid item xs={12} sm={6}>
+                    <TextField 
+                        fullWidth='90%'
+                        name='name' 
+                        label='Name'
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <TextField 
+                        fullWidth='90%'
+                        name='email' 
+                        label='E-mail'
+                    />
+                </Grid>  
+                <Grid item xs={12} >
+                    <TextField
+                        fullWidth='90%'
+                        name='message' 
+                        label='Message' 
+                        multiline rows={4}
+                    />
+                </Grid> 
+                <Grid item xs={12}>
+                    <Controls.Button text='Submit'/>
+                </Grid>
+            </Grid>         
+        </Grid>
+        <Grid item xs={12} lg={5} container>
+            <Grid item className='section_title mb_30' >                
+                <span></span>
+                <h6 className='section_title_text'>Contact Information</h6>
+            </Grid>            
+            <Grid item xs={12} container spacing={2}>
+                <Grid item xs={12}>
+                    <Typography className='contactInfo_item'>
+                        <span>Address: </span> {resumeData.address}
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography className='contactInfo_item'>
+                        <span>Phone: </span> {resumeData.phone}
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography className='contactInfo_item'>
+                        <span>Email: </span> {resumeData.email}
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item xs={12} container className='contactInfo_socialsContainer'>
+                {Object.keys(resumeData.socials).map((key)=>(
+                    <Grid item className='contactInfo_social'> 
+                        <a href= {resumeData.socials[key].link}>
+                            {resumeData.socials[key].icon}
+                        </a>
+                    </Grid>
+                ))}
+                
+            </Grid>
+        </Grid>
         </Grid> 
     </>
     )

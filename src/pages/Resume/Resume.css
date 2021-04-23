@@ -47,3 +47,24 @@
     margin-right: 5px  !important;
     padding-right: 5px;
 }
+
+/*Contacts section*/
+
+.contactInfo_item {
+    font-size: 14px !important;
+    color:#787878;
+}
+.contactInfo_item > span {
+    color: Black;
+    font-weight:  500;
+}
+
+.contactInfo_socialsContainer{
+    margin-top: 25px;
+    padding-top: 25px;
+}
+.contactInfo_social > a > .MuiSvgIcon-root {
+    font-size: 25px !important;
+    margin-right: 10px;
+    color: black;
+}

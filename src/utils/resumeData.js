@@ -8,7 +8,7 @@ export default {
 
     birthday: '16th Jan 1989',
     email: 'huyhung1601@gmail.com',
-    addres: 'Canberra, ACT, Australia',
+    address: 'Canberra, ACT, Australia',
     phone: '0420 600 611',
 
     socials:{
