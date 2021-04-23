@@ -1,7 +1,9 @@
+import project1 from '../assets/images/project1.png'
 import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { YouTube } from '@material-ui/icons';
 export default {
     name: 'Huy Hung Nguyen',
     title: 'Front End Developer',
@@ -80,6 +82,44 @@ export default {
 
             ]
         }
+    ],
+    projects:[
+        {
+            tag: 'ReactJs',
+            image: project1,
+            title: 'Project1',
+            description : 'This is my project description',
+            links: [
+                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+            ]
+        },
+        {
+            tag: 'ReactJs',
+            image: project1,
+            title: 'Project2',
+            description : 'This is my project description',
+            links: [
+                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+            ]
+        },
+        {
+            tag: 'Nodejs',
+            image: project1,
+            title: 'Project3',
+            description : 'This is my project description',
+            links: [
+                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+            ]
+        },
+        {
+            tag: 'Nodejs',
+            image: project1,
+            title: 'Project4',
+            description : 'This is my project description',
+            links: [
+                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+            ]
+        },
     ]
 }
 /** '\n' : new line */

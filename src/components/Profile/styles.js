@@ -2,7 +2,7 @@ import {makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles ((theme)=>({
     root:{
-        backgroundColor: '#dadef9',
+        backgroundColor: '#f4f4f9',
         border: '6px',
         width: '100%',
         display: 'inline-block',        
