@@ -8,6 +8,7 @@ body {
   background: #fafafa;
   overflow: hidden;
   background: url(./assets/images/bg.png);
+  overflow-y: visible;
 }
 
 

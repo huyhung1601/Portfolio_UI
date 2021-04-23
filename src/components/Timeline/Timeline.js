@@ -15,17 +15,18 @@ const CustomTimeline = ({title,icon, children}) => {
         {/* Item Header */}
         <TimelineItem className={classes.timelineFirstItem}>
             <TimelineSeparator>
-            <TimelineDot className={classes.timelineDotHeader}>{icon}</TimelineDot>
-            <TimelineConnector />
+                <TimelineDot className={classes.timelineDotHeader}>{icon}</TimelineDot>
+                <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
                 <Typography variant='h6' className={classes.timelineHeader}>
                     {title}
                 </Typography>                
-            </TimelineContent>
+            </TimelineContent>            
         </TimelineItem>
+        
         {children}
-        {/* Remaining Items */}            
+        {/* Remaining Items */}        
     </Timeline>
     )
 }
@@ -33,7 +34,7 @@ export const CustomTimelineSeparator = () =>{
     const classes = useStyles()
     return(
     <TimelineSeparator className={classes.separatorPadding}>
-        <TimelineDot variant='outlined'className={classes.timelineDot}/>
+        <TimelineDot variant={'outlined'} className={classes.timelineDot}/>
         <TimelineConnector />
     </TimelineSeparator>
 )};

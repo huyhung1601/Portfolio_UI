@@ -27,5 +27,37 @@ export default {
             text: 'my github',
             icon: <GitHubIcon/>,
         },
-    }
+    },
+    about : 'Web developer with 1 year of experience in designing and developing user interfaces and project management within React, Github and Trello. An Experience in managing a team of three to conduct an e-commerce website for final project at College. Proven ability in optimizing web functionalities that improve data process and workflow efficiencies. Ambitious problem solver with a passion for online businesses, and who would like to join a team of like-minded developers. Experience in creating both logical and innovative solutions to complex web problems. Accomplished individual with a competent background in HTML, CSS, React , Material UI and GitHub.',
+    experiences:[
+        {
+            title: 'React Front End Developer',
+            date: 'APRIL 2020 - CURRENT',
+            description: `+ Using Trello app to set up project goals and establish project process. \n
+            + Proficient in using Git and Github to keep track of code history and manage files. \n
+            + Proficient in doing research to find technical solutions. \n
+            + Experience in working projects relating to technical solutions for business problems. \n
+            + Fundamental understand of API and backend data.`,
+        },
+        {
+            title: 'Assistant Manager',
+            date: 'AUG 2016 - JUNE 2020',
+            description: `+ Ensuring consistence in the work follow.\n
+            + Managing, and training new team members for the job.\n
+            + Maintaining high customer level in a fast paced environment.`
+        }
+    ],
+    education: [
+        {        
+            title: 'Bachelor of Business Information System',
+            date: 'MARCH 2018 - DEC 2020',
+            description:``
+        },
+        {        
+            title: 'Master of Business And Commerce',
+            date: 'FEB 2014 - SEP 2014',
+            description:``
+        },
+    ]
 }
+/** '\n' : new line */
