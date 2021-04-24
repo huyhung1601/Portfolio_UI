@@ -80,12 +80,8 @@ const Resume = () => {
                 <span></span>
                 <h6 className='section_title_text'>My Skills</h6>
             </Grid>
-            <Grid item xs={12} container>
-
-            </Grid>
-        </Grid> 
-        {/**Skills */}
-        <Grid container spacing={3} justify='space-between' className= 'graybg pb_45'>
+            
+        <Grid item xs={12}container spacing={3} justify='space-between' className= 'graybg pb_45'>
             {/*  <Grid item className='section_title mb_30'>
                 <span></span>
                 <h6 className='section_title_text'>My Skills</h6>
@@ -106,6 +102,7 @@ const Resume = () => {
                 </Grid>
             ))}
         </Grid> 
+        </Grid>
         {/**Contacts */}
         <Grid container className='section pt_45 p_45'>   
         {/**Contact form */}        
