@@ -1,4 +1,4 @@
-import project1 from '../assets/images/project1.png'
+import project from '../assets/images/project.png'
 import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -20,12 +20,12 @@ export default {
             icon: <FacebookIcon/>,
         },
         LinkedIn:{
-            link: 'https://www.facebook.com/gk.longca',
+            link: 'https://www.linkedin.com/in/henry-nguyen-0a03989b/',
             text: 'my linkedin',
             icon: <LinkedInIcon/>,
         },
         Github:{
-            link: 'https://www.facebook.com/gk.longca',
+            link: 'https://github.com/huyhung1601?tab=repositories',
             text: 'my github',
             icon: <GitHubIcon/>,
         },
@@ -60,6 +60,16 @@ export default {
             date: 'FEB 2014 - SEP 2014',
             description:``
         },
+        {
+            title: 'Certificate IV And Bachelor of Screen And Media',
+            date: 'JAN 2016 - SEP FEB 2018',
+            description:''
+        },
+        {
+            title: 'Bachelor of Finance',
+            date: 'Sep 2009 - Sep 2013',
+            description: '',
+        }
     ],
     skills:[
         {
@@ -79,45 +89,50 @@ export default {
         {
             title: 'PROJECT MANAGEMENT',
             description:[
-
+                'Define goals',
+                'Establish wireframe and content',
+                'Establish design and functionality',
+                'Set up team involved',
+                'Defnitive action plan',
+                'Intensive testing'
             ]
         }
     ],
     projects:[
         {
             tag: 'ReactJs',
-            image: project1,
+            image: project,
             title: 'Project1',
             description : 'This is my project description',
             links: [
-                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+                {link: 'https://github.com/huyhung1601?tab=repositories', icon: <GitHubIcon/>}
             ]
         },
         {
             tag: 'ReactJs',
-            image: project1,
+            image: project,
             title: 'Project2',
             description : 'This is my project description',
             links: [
-                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+                {link: 'https://github.com/huyhung1601?tab=repositories', icon: <GitHubIcon/>}
             ]
         },
         {
             tag: 'Nodejs',
-            image: project1,
+            image: project,
             title: 'Project3',
             description : 'This is my project description',
             links: [
-                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+                {link: 'https://github.com/huyhung1601?tab=repositories', icon: <GitHubIcon/>}
             ]
         },
         {
             tag: 'Nodejs',
-            image: project1,
+            image: project,
             title: 'Project4',
             description : 'This is my project description',
             links: [
-                {link: 'http://www.google.com', icon: <GitHubIcon/>}
+                {link: 'https://github.com/huyhung1601?tab=repositories', icon: <GitHubIcon/>}
             ]
         },
     ]

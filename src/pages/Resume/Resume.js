@@ -74,7 +74,7 @@ const Resume = () => {
                 </Grid>
             </Grid>
         </Grid>
-        {/**Services */}
+        {/**Skills */}
         <Grid container className='section p_45'>
             <Grid item className='section_title mb_30'>
                 <span></span>
@@ -87,7 +87,7 @@ const Resume = () => {
                 <h6 className='section_title_text'>My Skills</h6>
             </Grid>                 */}
             {resumeData.skills.map((skill)=>(
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid item xs={12} sm={6} md={4}>
                     <Paper elevation={0} className='skill'>
                         <Typography variant='h6' className='skill_title'>
                             {skill.title}

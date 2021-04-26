@@ -21,9 +21,8 @@ export default makeStyles ((theme)=>({
             fontWeight: '400',            
             marginLeft: '1px'
         },
-        '& .MuiButtonBase-root':{
-            display: 'flex',
-            justifyContent: 'center',
+        '& .MuiButtonBase-root':{  
+            width: '60%',          
             marginTop: '20px',
         }
 
@@ -47,6 +46,9 @@ export default makeStyles ((theme)=>({
     },
     /**Information */
     profileInformation:{
+        display: 'flex',
+        flexDirection: 'column',        
+        alignItems: 'center',
         top: 0,
         left: 0,
         margin: '-44px 10px 30px',
